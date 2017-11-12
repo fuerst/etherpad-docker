@@ -11,7 +11,7 @@ FROM node:7
 MAINTAINER Bernhard Fürst, bernhard.fuerst@fuerstnet.de
 
 # You may overwrite the version. Use a Git branch or tag from https://github.com/ether/etherpad-lite.
-ENV ETHERPAD_VERSION 1.6.1
+ENV ETHERPAD_VERSION 1.6.2
 
 # Get Etherpad-lite's other dependencies
 RUN apt-get update
