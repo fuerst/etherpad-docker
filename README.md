@@ -73,9 +73,15 @@ services:
     ports:
       - "9001:9001"
     environment:
-    - ETHERPAD_ADMIN_PASSWORD='my-secret-password'
+    - ETHERPAD_ADMIN_PASSWORD=my-secret-password
 ```
+
+I recommend running Etherpad Lite behind [Nginx Proxy](https://github.com/jwilder/nginx-proxy) and the [LetsEncrypt companion container for nginx-proxy](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion).
 
 # Documentation
 
-https://github.com/ether/etherpad-lite/wiki
+See: https://github.com/ether/etherpad-lite/wiki
+
+## Hints
+
+* Admin UI available if ETHERPAD_ADMIN_PASSWORD is set at: http://
