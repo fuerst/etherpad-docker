@@ -41,9 +41,9 @@ docker run -p 9001:9001 \
   fuerst/etherpad-docker
 ```
 
-**Run Etherpad Lite stable version (1.6.2)**
+**Run Etherpad Lite stable version (1.6.3)**
 
-At the time of writing _stable_ means 1.6.2.
+At the time of writing _stable_ means 1.6.3.
 
 ```
 docker run -p 9001:9001 \
@@ -52,7 +52,7 @@ docker run -p 9001:9001 \
 
 **Build another version**
 
-Only latest stable release (1.6.2) and _develop_ are available from hub.docker.com. You may build any other release you want by specifying an etherpad-lite branch or tag when building your own image:
+Only latest stable release (1.6.3) and _develop_ are available from hub.docker.com. You may build any other release you want by specifying an etherpad-lite branch or tag when building your own image:
 
 ```
 docker build -e ETHERPAD_VERSION='1.5.5' .
