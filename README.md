@@ -57,3 +57,25 @@ Only latest stable release (1.6.1) and _develop_ are available from hub.docker.c
 ```
 docker build -e ETHERPAD_VERSION='1.5.5' .
 ```
+
+**Example Docker Compose file**
+
+```
+version: "2"
+
+services:
+  server:
+    image: fuerst/etherpad-docker:stable
+    restart: always
+    volumes:
+      - /opt/etherpad-lite/var:/opt/etherpad-lite/var
+      - /opt/etherpad-lite/node_modules:/opt/etherpad-lite/node_modules
+    ports:
+      - "9001:9001"
+    environment:
+    - ETHERPAD_ADMIN_PASSWORD='my-secret-password'
+```
+
+# Documentation
+
+https://github.com/ether/etherpad-lite/wiki
