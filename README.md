@@ -41,9 +41,9 @@ docker run -p 9001:9001 \
   fuerst/etherpad-docker
 ```
 
-**Run Etherpad Lite stable version (1.6.3)**
+**Run Etherpad Lite stable version (1.7.5)**
 
-At the time of writing _stable_ means 1.6.3.
+At the time of writing _stable_ means 1.7.5.
 
 ```
 docker run -p 9001:9001 \
@@ -52,7 +52,7 @@ docker run -p 9001:9001 \
 
 **Build another version**
 
-Only latest stable release (1.6.3) and _develop_ are available from hub.docker.com. You may build any other release you want by specifying an etherpad-lite branch or tag when building your own image:
+Only latest stable release (1.7.5) and _develop_ are available from hub.docker.com. You may build any other release you want by specifying an etherpad-lite branch or tag when building your own image:
 
 ```
 docker build -e ETHERPAD_VERSION='1.5.5' .
@@ -76,12 +76,6 @@ services:
     - ETHERPAD_ADMIN_PASSWORD=my-secret-password
 ```
 
-I recommend running Etherpad Lite behind [Nginx Proxy](https://github.com/jwilder/nginx-proxy) and the [LetsEncrypt companion container for nginx-proxy](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion).
-
 # Documentation
 
 See: https://github.com/ether/etherpad-lite/wiki
-
-## Hints
-
-* Admin UI available if ETHERPAD_ADMIN_PASSWORD is set at: http://
