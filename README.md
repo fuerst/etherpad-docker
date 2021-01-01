@@ -1,5 +1,9 @@
 # About
 
+**Deprecated**: SQLite isn't supported anymore so this repository will not longer be maintained. Please use the official [Etherpad Lite](https://github.com/ether/etherpad-lite) or my [Etherpad Lite docker image](https://hub.docker.com/r/fuerst/etherpad-lite) which is closely based on the official Etherpad Lite release but adds Libreoffice export capabilities and uses a Redis database backend.
+
+**Old documentation:**
+
 Run [Etherpad Lite](https://github.com/ether/etherpad-lite) inside a Docker container.
 This variant of an Etherpad Docker container is characterized by:
 
